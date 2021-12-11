@@ -2,13 +2,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 mongoose
-  .connect(
-    'mongodb+srv://kevhjc:kevhjc@cluster0.sdtfc.mongodb.net/grad-assessment?retryWrites=true&w=majority',
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
+  .connect('ADD URI HERE', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => console.log('Connected to Mongo DB.'))
   .catch((err) => console.log(err));
 
